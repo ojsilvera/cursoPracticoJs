@@ -43,7 +43,7 @@ y Traduce a código JavaScript las variables del ejemplo anterior y deja tu cód
 
         onsole.log = ahorro - (deudas.enero + deudas+febrero + deudas.marzo)
 
-## Funciones
+## Funciones.
 
 1️⃣ Responde las siguientes preguntas en la sección de comentarios.
 
