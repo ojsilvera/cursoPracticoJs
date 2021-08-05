@@ -1,3 +1,5 @@
+//funcion media aritmetica-------------------------------------------------------
+
 function promedio(lista){
 
     var sumatoria = 0;
@@ -6,18 +8,12 @@ function promedio(lista){
         var sumatoria = sumatoria + lista[i];
     }
 
-    // var sumatoria = lista.reduce(
-    //     function(vlrAcumulado = 0, vlrNuevo){
-    //         return vlrAcumulado + vlrNuevo;
-    //     }
-    // );
-
     var promedioL = sumatoria / lista.length;
 
     return promedioL;
 }
 
-//funcion media
+//funcion media------------------------------------------------------------------
 
 //determina si la media es para para o impar
 function par(numbers){
