@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/descuentos.css">
+    <title>Procentajes, descuentos y precios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Curso practico de JavaScript</h1>
+        <h2>Taller 2</h2>
+    </header>
+    <main>
+        <section>
+            <h3>Consulta precio con descuento</h3>
+            <form action=""></form>
+            <h1>Calcular el descuento de un producto</h1>
+            <label for="precio">Precio</label>
+            <input type="number" id="precio">
+            <label for="descuento">Descuento</label>
+            <input type="number" id="descuento">
+            <button type="button" onclick="descuentoP()">calcular</button>
+            <p id="precioF"></p>
+            </form>
+        </section>
+        <section>
+            <h3>Descuento con cupon</h3>
+            <form action="">
+                <h1>Calcular el descuento de un producto</h1>
+                <label for="precioC">Precio</label>
+                <input type="number" id="precioC">
+                <label for="cuponC">Descuento</label>
+                <input type="text" id="cuponC">
+                <button type="button" onclick="sDescuento()">calcular</button>
+                <p id="aPagar"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- <ul>
+            <li>terminos y condiciones</li>
+            <li>taller 1</li>
+            <li>taller 3</li>
+        </ul> -->
+    </footer>
+    <script src="js/descuentos.js"></script>
+</body>
+
+</html>
