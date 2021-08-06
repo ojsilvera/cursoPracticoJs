@@ -50,14 +50,19 @@ function stringToArray(){
 
     // obtiene la dadena del input
     var cadena = document.getElementById("arreglo");
+
     // extrae el valor de lo enviado desde html
     var cadenaInput = cadena.value;
+
     // separador determinado
     var separador = ",";
+
     //convierte la cadena en un array
     var numbersT = cadenaInput.split(separador);
+
     //establece el tipo de variable en un array.
     var numbers = [];
+
     // convierte cada valor del array de string a numeros
     numbersT.forEach( function(valor, indice, array) {
 
@@ -67,11 +72,46 @@ function stringToArray(){
     });
 
     //envia el array de numeros a la funcion que debe calcular la media
-    totalPromedio = calcularMedia(numbers);
+    var totalPromedio = calcularMedia(numbers);
 
     //muestra el valor del promedio en un p en html
-    var promedioHTML = document.getElementById("promedio");
-    promedio.innerText = "el promedio es: " + totalPromedio;
+    var promedioHTML = document.getElementById("mediaM");
+    mediaM.innerText = "el promedio es: " + totalPromedio;
 
 }
 
+// pendiente
+// convertir stringToArray a funcion generica para todas las funciones que lo requiera
+
+// moda------------------------------------------------------------------------------------------
+
+
+function modaInput(){
+
+    lista = document.getElementById("arrayM");
+    lista1 = lista.value;
+
+    const lista1Count = {};
+
+    lista1.map(
+        function (elemento) {
+            if (lista1Count[elemento]) {
+            lista1Count[elemento] += 1;
+            } else {
+            lista1Count[elemento] = 1;
+            }
+        }
+        );
+
+        const lista1Array = Object.entries(lista1Count).sort(
+        function (elementoA, elementoB) {
+            return elementoA[1] - elementoB[1];
+        }
+        );
+
+        const moda = lista1Array[lista1Array.length - 1];
+
+        modaP = document.getElementById("modaP")
+        modaP.innerText = "la moda es:"  + moda;
+
+}

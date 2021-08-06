@@ -1,18 +1,24 @@
-# todo taller 1.
+## todo taller 1
 
 - establecer las formulas
 - implementar las formulas en js
 - impolementar las formulas en funciones
 - implementar js con html
 
-# todo taller 2.
+## taller 2
 
 - establecer las formulas
 - implementar las formulas en js
 - impolementar las formulas en funciones
 - implementar js con html
 
-## nota
+## taller 3
+
+- establecer las formulas
+- implementar las formulas en js e impolementar las formulas en funciones.
+- implementar js con html(pendiente)
+
+## notas--------------------------------------------------------------------
 
 para generar un boton que nos lleve a otra pagina o alguna parte del sitio
 tenemos dos formas:
@@ -20,7 +26,7 @@ tenemos dos formas:
     con la etiqueta button
 
     <button onclick="location.href='/figuras.html'">Ir</button>
-    tendra todas las propiedades html de un botn
+    tendra todas las propiedades html de un boton
 
     o
 
@@ -36,3 +42,7 @@ tenemos dos formas:
     margin: 5px;
     }
     <a href="https://es.stackoverflow.com" target="_blank">Mi boton</a>
+
+Para convertir un obejeto en un array se puede utilizar
+
+    array = Object.entries(arrayAConvertir)
